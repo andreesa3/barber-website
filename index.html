@@ -6,258 +6,247 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index,follow" />
     <title>Barber Website</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"
-    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="scrollbar-container">
-      <div class="content simplebar-content">
-        <header>
-          <section class="hero-section">
-            <div class="container">
-              <nav>
-                <div class="logo-box">
-                  <!-- Logo -->
-                  <img class="logo" src="./images/logo.svg" alt="logo" />
-                  <!-- Hamburger -->
-                  <img
-                    class="hamburger"
-                    src="./images/hamburger.svg"
-                    alt="hamburger"
-                  />
-                </div>
-                <div class="links">
-                  <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Servizi</a></li>
-                    <li><a href="">Galleria</a></li>
-                    <li><a href="">Contatti</a></li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-
-            <div class="hero-box">
-              <div>
-                <p class="hero-title">Barberia Rossi</p>
-                <img
-                  class="hero-title-icon"
-                  src="./images/hero-title-icon.svg"
-                  alt="hero-icon"
-                />
-                <p class="hero-subtitle">
-                  dove qualità e cliente sono al primo posto
-                </p>
-              </div>
-            </div>
-          </section>
-        </header>
-
-        <main>
-          <!-- Servizi -->
-          <section class="services-section">
-            <p class="section-title">Servizi</p>
-            <div class="container">
-              <div class="services-icon">
-                <div class="service-card">
-                  <img src="./images/scissors.svg" alt="scissors icon" />
-                  <p>Taglio</p>
-                </div>
-                <div class="service-card">
-                  <img src="./images/razor.svg" alt="razor icon" />
-                  <p>Rasatura</p>
-                </div>
-                <div class="service-card">
-                  <img src="./images/beard.svg" alt="beard icon" />
-                  <p>Rifinitura</p>
-                </div>
-                <div class="service-card">
-                  <img src="./images/shampoo.svg" alt="shampoo icon" />
-                  <p>Shampoo</p>
-                </div>
-                <div class="service-card">
-                  <img src="./images/man-care.svg" alt="mask icon" />
-                  <p>Maschera</p>
-                </div>
-                <div class="service-card">
-                  <img src="./images/color.svg" alt="color icon" />
-                  <p>Colore</p>
-                </div>
-              </div>
-
-              <div class="prices-container">
-                <div class="prices-box">
-                  <img
-                    src="./images/prezzi-capelli.jpeg"
-                    alt="prezzi-capelli"
-                  />
-                </div>
-                <div class="prices-box">
-                  <img src="./images/prezzi-barba.jpeg" alt="prezzi-barba" />
-                </div>
-                <div class="prices-box">
-                  <img
-                    src="./images/prezzi-trattamenti.jpeg"
-                    alt="prezzi-trattamenti"
-                  />
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- Gallery -->
-          <section class="gallery-section">
-            <p class="section-title">Gallery</p>
-            <div class="container">
+    <header>
+      <section class="hero-section">
+        <div class="container">
+          <nav>
+            <div class="logo-box">
+              <!-- Logo -->
+              <img class="logo" src="./images/logo.svg" alt="logo" />
+              <!-- Hamburger -->
               <img
-                class="collage"
-                src="./images/collage.jpeg"
-                alt="gallery-collage"
+                class="hamburger"
+                src="./images/hamburger.svg"
+                alt="hamburger"
               />
             </div>
-          </section>
-
-          <!-- Reviews -->
-          <section class="reviews-section">
-            <p class="section-title">I nostri clienti</p>
-            <div class="reviews-container container">
-              <div class="review-card">
-                <img
-                  class="review-avatar"
-                  src="./images/person-1.jpeg"
-                  alt="Avatar Icon"
-                />
-                <p class="review-text">
-                  "Personale molto gentile e attento alle esigenze, taglio di
-                  capelli eccellente!"
-                </p>
-                <small>- Mario Neri</small>
-              </div>
-              <div class="review-card">
-                <img
-                  class="review-avatar"
-                  src="./images/person-2.jpeg"
-                  alt="Avatar Icon"
-                />
-                <p class="review-text">
-                  "Barbiere molto disponibile, ha ascoltato attentamente la mia
-                  idea e l'ha trasformata in realtà!"
-                </p>
-                <small>- Mario Neri</small>
-              </div>
-              <div class="review-card">
-                <img
-                  class="review-avatar"
-                  src="./images/person-3.jpeg"
-                  alt="Avatar Icon"
-                />
-                <p class="review-text">
-                  "Cura della Barba come solo un vero professionista sa fare."
-                </p>
-                <small>- Mario Neri</small>
-              </div>
-            </div>
-          </section>
-
-          <section class="contact-section">
-            <p class="section-title">Contatti</p>
-            <div class="container">
-              <form action="#">
-                <div>
-                  <label class="contact-label" for="name">Nome e Cognome</label>
-                  <input
-                    class="contact-input"
-                    type="text"
-                    name="name"
-                    id="input-name"
-                    required
-                  />
-                </div>
-                <div>
-                  <label class="contact-label" for="email">Email</label>
-                  <input
-                    class="contact-input"
-                    type="email"
-                    name="email"
-                    id="input-email"
-                    required
-                  />
-                </div>
-                <div>
-                  <label class="contact-label" for="message">Messaggio</label>
-                  <textarea
-                    class="contact-textarea"
-                    name="message"
-                    id="message-input"
-                    cols="30"
-                    rows="10"
-                  ></textarea>
-                </div>
-                <button class="contact-button">Invia</button>
-              </form>
-            </div>
-          </section>
-        </main>
-
-        <footer>
-          <div class="footer-container container">
-            <img class="logo" src="./images/logo.svg" alt="logo footer" />
-            <div class="footer-links">
-              <p class="footer-title">Link Utili</p>
+            <div class="links">
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Servizi</a></li>
-                <li><a href="#">Galleria</a></li>
-                <li><a href="#">Contatti</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Servizi</a></li>
+                <li><a href="">Galleria</a></li>
+                <li><a href="">Contatti</a></li>
               </ul>
             </div>
-            <!-- Orari -->
-            <div>
-              <p class="footer-title">Orari</p>
-              <div class="time-box">
-                <p>Martedì - Sabato</p>
-                <p>9:00 - 19:00</p>
-              </div>
-              <div class="time-box">
-                <p>Domenica e Lunedì</p>
-                <p>Chiuso</p>
-              </div>
+          </nav>
+        </div>
+
+        <div class="hero-box">
+          <div>
+            <p class="hero-title">Barberia Rossi</p>
+            <img
+              class="hero-title-icon"
+              src="./images/hero-title-icon.svg"
+              alt="hero-icon"
+            />
+            <p class="hero-subtitle">
+              dove qualità e cliente sono al primo posto
+            </p>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- Servizi -->
+      <section class="services-section">
+        <p class="section-title">Servizi</p>
+        <div class="container">
+          <div class="services-icon">
+            <div class="service-card">
+              <img src="./images/scissors.svg" alt="scissors icon" />
+              <p>Taglio</p>
             </div>
-            <!-- Contatti -->
-            <div class="footer-contact">
-              <p class="footer-title">Contattaci</p>
-              <div class="contact-box">
-                <!-- Icona Posizione -->
-                <img src="./images/location.svg" alt="location icon" />
-                <div>
-                  <p>Posizione:</p>
-                  <p>Via Roma, 1, Roma</p>
-                </div>
-              </div>
-              <div class="contact-box">
-                <!-- Icona Telefono-->
-                <img src="./images/phone.svg" alt="phone icon" />
-                <div>
-                  <p>Telefono:</p>
-                  <p>+393201234567</p>
-                </div>
-              </div>
-              <div class="contact-box">
-                <!-- Icona Instagram-->
-                <img src="./images/instagram.svg" alt="instagram icon" />
-                <div>
-                  <p>Instagram:</p>
-                  <p>barberiarossi_</p>
-                </div>
-              </div>
+            <div class="service-card">
+              <img src="./images/razor.svg" alt="razor icon" />
+              <p>Rasatura</p>
+            </div>
+            <div class="service-card">
+              <img src="./images/beard.svg" alt="beard icon" />
+              <p>Rifinitura</p>
+            </div>
+            <div class="service-card">
+              <img src="./images/shampoo.svg" alt="shampoo icon" />
+              <p>Shampoo</p>
+            </div>
+            <div class="service-card">
+              <img src="./images/man-care.svg" alt="mask icon" />
+              <p>Maschera</p>
+            </div>
+            <div class="service-card">
+              <img src="./images/color.svg" alt="color icon" />
+              <p>Colore</p>
             </div>
           </div>
-        </footer>
+
+          <div class="prices-container">
+            <div class="prices-box">
+              <img src="./images/prezzi-capelli.jpeg" alt="prezzi-capelli" />
+            </div>
+            <div class="prices-box">
+              <img src="./images/prezzi-barba.jpeg" alt="prezzi-barba" />
+            </div>
+            <div class="prices-box">
+              <img
+                src="./images/prezzi-trattamenti.jpeg"
+                alt="prezzi-trattamenti"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="gallery-section">
+        <p class="section-title">Gallery</p>
+        <div class="container">
+          <img
+            class="collage"
+            src="./images/collage.jpeg"
+            alt="gallery-collage"
+          />
+        </div>
+      </section>
+
+      <!-- Reviews -->
+      <section class="reviews-section">
+        <p class="section-title">I nostri clienti</p>
+        <div class="reviews-container container">
+          <div class="review-card">
+            <img
+              class="review-avatar"
+              src="./images/person-1.jpeg"
+              alt="Avatar Icon"
+            />
+            <p class="review-text">
+              "Personale molto gentile e attento alle esigenze, taglio di
+              capelli eccellente!"
+            </p>
+            <small>- Mario Neri</small>
+          </div>
+          <div class="review-card">
+            <img
+              class="review-avatar"
+              src="./images/person-2.jpeg"
+              alt="Avatar Icon"
+            />
+            <p class="review-text">
+              "Barbiere molto disponibile, ha ascoltato attentamente la mia idea
+              e l'ha trasformata in realtà!"
+            </p>
+            <small>- Mario Neri</small>
+          </div>
+          <div class="review-card">
+            <img
+              class="review-avatar"
+              src="./images/person-3.jpeg"
+              alt="Avatar Icon"
+            />
+            <p class="review-text">
+              "Cura della Barba come solo un vero professionista sa fare."
+            </p>
+            <small>- Mario Neri</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <p class="section-title">Contatti</p>
+        <div class="container">
+          <form action="#">
+            <div>
+              <label class="contact-label" for="name">Nome e Cognome</label>
+              <input
+                class="contact-input"
+                type="text"
+                name="name"
+                id="input-name"
+                required
+              />
+            </div>
+            <div>
+              <label class="contact-label" for="email">Email</label>
+              <input
+                class="contact-input"
+                type="email"
+                name="email"
+                id="input-email"
+                required
+              />
+            </div>
+            <div>
+              <label class="contact-label" for="message">Messaggio</label>
+              <textarea
+                class="contact-textarea"
+                name="message"
+                id="message-input"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <button class="contact-button">Invia</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container container">
+        <img class="logo" src="./images/logo.svg" alt="logo footer" />
+        <div class="footer-links">
+          <p class="footer-title">Link Utili</p>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Servizi</a></li>
+            <li><a href="#">Galleria</a></li>
+            <li><a href="#">Contatti</a></li>
+          </ul>
+        </div>
+        <!-- Orari -->
+        <div>
+          <p class="footer-title">Orari</p>
+          <div class="time-box">
+            <p>Martedì - Sabato</p>
+            <p>9:00 - 19:00</p>
+          </div>
+          <div class="time-box">
+            <p>Domenica e Lunedì</p>
+            <p>Chiuso</p>
+          </div>
+        </div>
+        <!-- Contatti -->
+        <div class="footer-contact">
+          <p class="footer-title">Contattaci</p>
+          <div class="contact-box">
+            <!-- Icona Posizione -->
+            <img src="./images/location.svg" alt="location icon" />
+            <div>
+              <p>Posizione:</p>
+              <p>Via Roma, 1, Roma</p>
+            </div>
+          </div>
+          <div class="contact-box">
+            <!-- Icona Telefono-->
+            <img src="./images/phone.svg" alt="phone icon" />
+            <div>
+              <p>Telefono:</p>
+              <p>+393201234567</p>
+            </div>
+          </div>
+          <div class="contact-box">
+            <!-- Icona Instagram-->
+            <img src="./images/instagram.svg" alt="instagram icon" />
+            <div>
+              <p>Instagram:</p>
+              <p>barberiarossi_</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
     <!-- Da fare -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
