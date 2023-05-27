@@ -60,7 +60,7 @@ ul {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: var(--clr-black);
 }
 
 /* Handle */
