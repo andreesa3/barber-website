@@ -1,5 +1,5 @@
 const hamburger = document.querySelector(".hamburger");
-const sidebar = document.querySelector(".links");
+const sidebar = document.querySelector(".links ul");
 const body = document.querySelector("body");
 
 hamburger.addEventListener("click", openSidebar);
@@ -17,7 +17,6 @@ function checkScreenSize() {
   let mediaQuery = window.matchMedia("(min-width: 768px)");
 
   if (mediaQuery.matches) {
-    // Dimensione mobile: rimuovi la classe "sidebar-active"
     sidebar.classList.remove("active");
     body.classList.remove("no-scroll");
   }
