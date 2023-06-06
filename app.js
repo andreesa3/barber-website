@@ -8,11 +8,6 @@ function openSidebar() {
   sidebar.classList.toggle("active");
   body.classList.toggle("no-scroll");
 }
-
-const scrollbarContainer = document.querySelector(".scrollbar-container");
-const content = document.querySelector(".content");
-new SimpleBar(content, { autoHide: true });
-
 function checkScreenSize() {
   let mediaQuery = window.matchMedia("(min-width: 768px)");
 
